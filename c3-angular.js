@@ -413,7 +413,7 @@ function ChartAxisXTick() {
 
         var formatTime = attrs.tickFormatTime;
         if (formatTime) {
-            tick.format = d3.time.format(formatTime);
+            tick.format = d3.timeFormat(formatTime);
         }
 
         chartCtrl.addXTick(tick);
